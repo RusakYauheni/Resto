@@ -1,0 +1,541 @@
+@font-face {
+	font-family: 'WC Mano Negra Bta';
+	src: url(/7fonts.ru_WCManoNegraBta.ttf);
+}
+@font-face {
+	font-family: 'Aleo';
+	src: url(/Aleo-Regular.otf);
+}
+body {
+	width: 100%;
+	max-width: 1500px;
+	margin: 0 auto;
+	font-size: 16px;
+}
+.abc {
+	display: none;
+	background-color:rgba(0,0,0,.3);
+    height:100%;
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index: 99;
+}
+.mask-hidden {
+	display: block;
+}
+header {
+	display: flex;
+	height: 110px;
+	padding: 0 13%;
+	justify-content: space-between;
+	align-items: center;
+}
+#menu-toggle {
+	position: absolute;
+	right: 0;
+	top: 35px;
+	display: none;
+	font: 2em "arial";
+	color: black;
+}
+#menu-toggle a:visited {
+	text-decoration: none;
+	color: black;
+}
+nav a {
+	color: black;
+	font-family: 'WC Mano Negra Bta'; 
+	font-size: 22px;
+	padding: 0 10px;
+	text-decoration: none;
+}
+.nav-men {
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 0;
+	overflow: hidden;
+	transition: 0.5s;
+	z-index: 100;
+	background-color: grey;
+}
+.nav-men ul {
+	height: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.nav-men li {
+	border-bottom: 1px solid grey;
+	padding: 5px;
+	width: 100%;
+	font-family: 'WC Mano Negra Bta'; 
+	font-size: 14px;
+	background-color: white;	
+	text-align: center;
+}
+.nav-men ul a {
+	display: block;
+	color: black;
+	text-decoration: none;
+}
+.set li{
+	border-bottom: 0;
+	background-color: grey;
+	
+}
+.nav-men ul li:last-child {
+	background-color: grey;
+}
+.open{
+	display:block;
+	width: 50%;
+}
+main {
+	height: 100%;
+}
+.welcome {
+	position: relative;
+	height: 570px;
+	width: 100%;
+	background-image: url(images/Layer1.jpg);
+	background-position: 50% 40%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-bottom: 4px solid #f34949;
+	z-index: 1;
+}
+.welcome .one {
+	margin: 220px auto 0;
+	text-align: center;
+	font-family: 'WC Mano Negra Bta'; 
+	font-size: 75px;
+	color: white;
+
+}
+.welcome .two {
+	margin: 30px auto 0;
+	text-align: center;
+	font-family: 'Aleo';
+	font-size: 20px;
+	color: white;
+}
+.cover {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: black;
+	opacity: 0.4;
+}
+.menu-meal {
+	padding: 0 10% 0 13%;
+	margin-top: 50px;
+	
+}
+.menu-meal:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.load {
+	display: block;
+	width:120px;
+	margin: 100px auto;
+	color: #b7b7b7;
+	font-size: 18px;
+	padding: 5px;
+}
+.menu-back {
+	height: 75px;
+	width: 155px; 
+	margin: 0 auto;
+	background-image: url(images/menu.jpg);
+	text-align: center;
+	padding-top: 20px;
+	box-sizing: border-box;
+	font-family: 'Aleo';
+	font-size: 20px;
+	color: white;
+}
+.meal-style {
+	width: 45%;
+}
+.meal-style h3 {
+	display: inline-block;
+	font-family: 'Aleo';
+	font-size: 20px;
+	color: black;
+	margin: 0;
+}
+.meal-style p {
+	font-family: 'Aleo';
+	font-size: 14px;
+	color: #b7b7b7;
+	margin-top: 0;
+}
+.meal-style img {
+	margin: 0 auto;
+}
+.meal-style span {
+	font-family: 'Aleo';
+	font-size: 20px;
+	color: black;
+}
+.meal-style div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.featured {
+	display: flex;
+	margin: 0 13%;
+	justify-content: space-between;
+	align-items: center;
+}
+.feautured p {
+	display: inline-block; 
+}
+.dishes {
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 13%;
+}
+.dishes div {
+	display: inline-block;
+}
+.dishes p {
+	font-size: 20px;
+	font-style: bold;
+	font-family: 'Aleo';
+}
+.dishes h3 {
+	font-size: 14px;
+	font-family: 'Aleo';
+	margin-bottom: 5px;
+}
+.galery p {
+	font-size: 20px;
+	font-style: bold;
+	font-family: 'Aleo';
+}
+section.galery {
+	height: 433px;
+	margin: 0 13% 200px 13%;
+}
+p.galery {
+	height: 100%;
+	margin: 200px 13% 100px 13%;
+}
+.galery-1 {
+	float: left;
+	display: inline-block;
+	width: 40%;
+	height: 100%;
+	margin-right: 0; 
+}
+.galery-1 a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/galery-1.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;	
+}
+.galery-2 {
+	float: right;
+	display: inline-block;
+	width: 30%;
+	height: 50%;
+}
+.galery-2 a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/galery-2.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;	
+}
+.galery-3 {
+	display: inline-block;
+	width: 30%;
+	height: 50%;
+	
+}
+.galery-3 a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/galery-3.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;	
+}
+.galery-4 {
+	float: right;
+	display: inline-block;
+	width: 30%;
+	height: 50%;
+	margin-top: -5px;
+}
+.galery-4 a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/galery-4.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;	
+}
+.galery-5 {
+	float: right;
+	display: inline-block;
+	width: 30%;
+	height: 50%;
+	margin-top: -5px;
+}
+.galery-5 a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/galery-5.jpg);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;	
+}
+footer {
+	height: 100%;
+	background-color: #3b3b3b;
+}
+footer p {
+	display: inline-block;
+	font-size: 12px;
+	font-family: 'Aleo';
+	color: white;
+}
+.footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: top;
+	margin: 0 13%;
+	padding: 5% 0;
+}
+.footer p {
+	margin: 0;
+}
+.foot-list {
+	display: inline-block;
+	padding-left: 0;
+	list-style: none;
+	margin: 0;
+}
+.foot-list a {
+	color: white;
+	font-size: 12px;
+	font-family: 'Aleo';
+	text-decoration: none;
+}
+
+footer div>div {
+	display: inline-block;
+}
+footer div>div img {
+	display: block;
+}
+footer div>div p {
+	margin-top: 0;
+}
+footer div>div a {
+	text-decoration: none;
+	color: white;
+	font-size: 12px;
+	font-family: 'Aleo';
+	
+}
+@media screen and (min-width: 320px) and (max-width: 480px)  {
+header {
+	padding: 0;
+	justify-content: space-around;
+}
+button#menu-toggle {
+	position: absolute;
+	right: 0;
+}
+#menu-toggle {
+	display: inline-block;
+}
+button#menu-toggle:hover #navi-menu {
+	opacity: 1;
+	visibility: visible;
+	transition-delay: 0s;
+}
+nav a{
+	display: none;
+	font-size: 100%;
+	padding: 0;
+}
+.welcome .one {
+	font-size: 350%;
+	margin-top: 45%;	
+}
+.welcome .two {
+	font-size: 75%;
+}
+.menu-meal {
+	padding: 0;
+}
+.left, .right {
+	float: none;
+}
+.meal-style img {
+	display: none;
+}
+.meal-style {
+	width: 90%;
+	margin-right: 0;
+	padding: 0 5%;
+}
+.featured { 
+	margin: 0;
+	justify-content: space-around;
+}
+.palka {
+	display: none;
+}
+.dishes {
+	margin: 50px auto;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: stretch;
+	width: 230px;
+}
+.dishes div {
+	display: block;
+	width: 230px;
+	margin-bottom: 20px;
+}
+.dishes div h3 {
+	display: inline-block;
+	width: 230px;
+	margin: 0;
+}
+.dishes div img {
+	display: inline-block;
+	margin-right: 0;
+}
+section.galery {
+	margin-bottom: 50px;
+}
+p.galery {
+	margin: 100px auto 50px auto;
+	text-align: center;
+}
+.galery div {
+	display: block;
+	width: 100%;
+	height: 20%;
+	float: none;
+}
+.footer p {
+	font-size: 60%;
+}
+.foot-list a {
+	font-size: 60%;
+}
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+header {
+	padding: 0;
+	justify-content: space-around;
+}
+nav a {
+	padding: 0;
+}
+.nav-men {
+	display: none;
+}
+.welcome .one {
+	font-size: 350%;
+	margin-top: 35%;	
+}
+.welcome .two {
+	font-size: 75%;
+}
+.left, .right {
+	float: none;
+}
+.menu-meal {
+	padding: 0;
+}
+.meal-style {
+	width: 96%;
+	padding: 0 2%;
+}
+div.featured {
+	margin: 0 2%;
+}
+section.dishes {
+	margin: 50px 2%;
+}
+.dishes {
+	flex-wrap: wrap;
+}
+
+.dishes div {
+	display: block;
+	margin: 0 auto;
+}
+p.galery {
+	margin-top: 100px;
+	text-align: center;
+}
+section.galery {
+	margin: 0 2% 100px 2%;
+}
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+.nav-men {
+	display: none;
+}
+div.menu-meal {
+	padding: 0 5% ;
+}
+div.meal-style.left, div.meal-style.right {
+	float: none;
+	width: 90%;
+}
+div.featured {
+	margin: 0 2%;
+}
+section.dishes {
+	margin: 50px 2%;
+}
+.dishes {
+	flex-wrap: wrap;
+}
+.dishes div:nth-child(4) {
+	margin: 0 auto;
+}
+p.galery {
+	margin: 100px 2%;
+}
+section.galery {
+	margin: 0 2% 100px 2%;
+}
+}
+@media screen and (min-width: 1025px) and (max-width: 1078px) {
+.nav-men {
+	display: none;
+}
+section.dishes {
+	margin: 50px 2%;
+}
+}
