@@ -6,6 +6,30 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="style.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+ 
+$(window).scroll(function(){
+if ($(this).scrollTop() > 100) {
+$('.scrollup').fadeIn();
+$('.scroller').fadeIn();
+} else {
+$('.scrollup').fadeOut();
+$('.scroller').fadeOut();
+}
+});
+ 
+$('.scrollup').click(function(){
+$("html, body").animate({ scrollTop: 0 }, 300);
+return false;
+});
+$('.scroller').click(function(){
+$("html, body").animate({ scrollTop: 0 }, 300);
+return false;
+});
+});
+	</script>
 	</head>
 	<body>
 		<div id="mask" class="abc"></div>
@@ -189,5 +213,8 @@
 				</div>
 			</footer>
 			<script src="new.js"></script> 
+			<div class="scroller">
+			</div>
+			<a href="#" class="scrollup" title="Наверх"></a>
 	</body>
 </html>
